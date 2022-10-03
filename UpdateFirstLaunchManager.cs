@@ -43,7 +43,7 @@ namespace MysticsItems
                         ResetAchievements(
                             "MysticsItems_DiscDeath",
                             "MysticsItems_EscapeMoonAlone",
-                            "MysticsItems_RepairBrokenSpotter"
+                            "MysticsItems_RepairBrokenSpotterDrone"
                         );
                     }
 
