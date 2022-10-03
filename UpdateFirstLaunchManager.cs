@@ -46,6 +46,12 @@ namespace MysticsItems
                             "MysticsItems_RepairBrokenSpotterDrone"
                         );
                     }
+                    if (lastModVersionNum < 270)
+                    {
+                        ResetAchievements(
+                            "MysticsItems_FindArchaicMask"
+                        );
+                    }
 
                     user.userProfile.achievementsList.Remove(storedAchievement);
                     user.userProfile.achievementsList.Add(prefix + MysticsItemsPlugin.PluginVersion);
