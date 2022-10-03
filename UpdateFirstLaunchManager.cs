@@ -52,6 +52,12 @@ namespace MysticsItems
                             "MysticsItems_FindArchaicMask"
                         );
                     }
+                    if (lastModVersionNum < 271)
+                    {
+                        ResetAchievements(
+                            "MysticsItems_DiscDeath"
+                        );
+                    }
 
                     user.userProfile.achievementsList.Remove(storedAchievement);
                     user.userProfile.achievementsList.Add(prefix + MysticsItemsPlugin.PluginVersion);
