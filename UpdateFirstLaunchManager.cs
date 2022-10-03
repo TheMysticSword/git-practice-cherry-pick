@@ -27,6 +27,7 @@ namespace MysticsItems
                                 {
                                     if (achievementDef != null)
                                     {
+                                        Debug.Log("Revoking achievement " + achievementDef.identifier);
                                         if (user.userProfile.HasAchievement(achievementDef.identifier))
                                             user.userProfile.RevokeAchievement(achievementDef.identifier);
                                         var unlockable = UnlockableCatalog.GetUnlockableDef(achievementDef.unlockableRewardIdentifier);
