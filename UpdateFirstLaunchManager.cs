@@ -32,7 +32,10 @@ namespace MysticsItems
                                             user.userProfile.RevokeAchievement(achievementDef.identifier);
                                         var unlockable = UnlockableCatalog.GetUnlockableDef(achievementDef.unlockableRewardIdentifier);
                                         if (unlockable && user.userProfile.HasUnlockable(unlockable))
+                                        {
                                             user.userProfile.RevokeUnlockable(unlockable);
+                                            Debug.Log("Revoking unlockable " + achievementDef.unlockableRewardIdentifier);
+                                        }
                                     }
                                 }
                             }
